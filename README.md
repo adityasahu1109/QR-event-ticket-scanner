@@ -29,26 +29,33 @@ The pyzbar library requires a system-level dependency called ZBar. You must inst
   brew install zbar
 
 * **Linux** (Debian/Ubuntu):  
+  ```
   sudo apt-get update  
   sudo apt-get install libzbar0
-
+  ```
 ### **Step 2: Set Up a Python Environment**
 
 It is highly recommended to use a virtual environment to manage project dependencies.
 
 1. **Create a virtual environment**:  
+   ```
    python \-m venv venv
-
+    ```
 2. **Activate it**:  
-   * On Windows:  
+   * On Windows:
+     ```
      venv\\Scripts\\activate
+     ```
 
-   * On macOS/Linux:  
+   * On macOS/Linux:
+     ```  
      source venv/bin/activate
-
+      ```
 3. **Install the required Python libraries**:  
+   ```
    pip install opencv-python pyzbar gspread oauth2client numpy
-
+   ```
+  
 ### **Step 3: Configure Google Cloud & Service Account**
 
 This is the most critical part. This process allows the script to securely access your Google Sheet without you having to log in manually.
@@ -96,9 +103,9 @@ This is the most critical part. This process allows the script to securely acces
 
 1. Make sure your virtual environment is activated.  
 2. Run the script from your terminal:  
-   '''
+  ```
    python qr\_scanner.py
-    '''
+  ```
 4. A window showing your webcam feed will appear. Point the camera at a QR code.  
 5. To stop the scanner, make sure the webcam window is active and press the **'q'** key.
 
@@ -131,14 +138,15 @@ Using a virtual environment is highly recommended to keep your project's depende
 
 1. **Open a terminal or command prompt** inside your new project folder.  
 2. **Create the virtual environment** by running this command:  
-   python \-m venv venv
-
+  ```
+ python \-m venv venv
+  ```
 3. **Activate the environment**:  
    * **On Windows**:  
-     venv\\Scripts\\activate
+    ```   venv\\Scripts\\activate ```
 
    * **On macOS / Linux**:  
-     source venv/bin/activate
+     ``` source venv/bin/activate ```
 
 You will know it's active when you see (venv) at the beginning of your command prompt line.
 
@@ -146,7 +154,7 @@ You will know it's active when you see (venv) at the beginning of your command p
 
 With your virtual environment active, install all the necessary libraries with a single command:
 
-pip install opencv-python pyzbar numpy openpyxl
+``` pip install opencv-python pyzbar numpy openpyxl  ```
 
 ## **Step 4: Configure the Scanner (Optional)**
 
